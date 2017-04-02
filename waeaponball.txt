@@ -1,0 +1,27 @@
+function controlGame(){
+if (cursors.left.isDown){
+    arrow.body.angularVelocity = -60;
+    ball.body.x -= 2;
+    ball2.body.x-=2;
+    ball3.body.x-=2
+}
+else if (cursors.right.isDown){
+    arrow.body.angularVelocity = 60;
+     ball.body.x += 2;
+     ball2.body.x += 2;
+     ball3.body.x += 2;
+  //   ballses.body.x +=2;
+}
+else{
+    arrow.body.angularVelocity = 0;
+    arrow.body.acceleration.set(0);
+}
+
+// zczytywanie ruchu
+
+
+ if (fireButton.isDown) {
+     launch_ball();
+   console.log("sssssss")
+ }
+}
